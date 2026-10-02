@@ -6,68 +6,68 @@
 <title>Monitoramento Backoffice</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html,
-body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #1B1C2E;
-    font-family: Arial, sans-serif;
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#1B1C2E;
+    font-family:Arial,sans-serif;
 }
 
-.header {
-    height: 34px;
-    background: #1B1C2E;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    font-size: 14px;
-    font-weight: regular;
+.header{
+    height:34px;
+    background:#1B1C2E;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:0 15px;
+    font-size:14px;
+    font-weight:400;
 }
 
-.subheader {
-    height: 45px;
-    background: #3C444D;
-    border-top: 1px solid #2c2e49;
+.subheader{
+    height:45px;
+    background:#3C444D;
 }
 
-.container {
-    width: 100vw;
-    height: calc(100vh - 48px);
-    overflow: hidden;
-    background: #1B1C2E;
-    position: relative;
+.container{
+    width:100vw;
+    height:calc(100vh - 79px);
+    overflow:hidden;
+    background:#1B1C2E;
+    position:relative;
 }
 
-/* elimina a faixa branca da direita */
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100% + 25px);
-    height: 100%;
-    border: none;
-    display: block;
-    margin-right: -25px;
+iframe{
+    position:absolute;
+
+    /* corta as bordas brancas */
+    top:-16px;
+    left:-12px;
+
+    width:calc(100% + 37px);
+    height:calc(100% + 16px);
+
+    border:none;
+    display:block;
 }
 </style>
-
 </head>
+
 <body>
 
 <div class="header">
     Power BI - Backoffice Monitoreo
 </div>
 
-<div class="subheader">
-</div>
+<div class="subheader"></div>
 
 <div class="container">
     <iframe
